@@ -26,6 +26,7 @@ export default async function handler(
   let count: CountType = parseInt(JSON.parse(_count as string) || 0);
 
   // Increement the count, only if the request is from the github profile page.
+  // NOTE: To test on local, comment out the `if` condition
   const userAgent = req.headers["user-agent"];
   if (userAgent?.includes("github")) {
     // Increement the view count

@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![made-with-python](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
 
-## Getting Started
+<h1>
+<p align="center">
+<img align="center" src="https://lohxt1.github.io/_assets/ticker.svg" alt="github-profile-watcher"/><br/><br/>Github Profile Watcher
+</h1>
+  <p align="center">
+    Github Profile views counter NextJS API
+    </p>
+</p>
 
-First, run the development server:
+## About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+"github-profile-watcher" is a minimal API that provides real-time updates on the number of profile views and presents the data in form of a simple svg badge.
+
+`github.com/lohxt1`
+
+![](https://github-profile-watcher.vercel.app/api/watcher/lohxt1)
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) – `framework`
+- [Typescript](https://www.typescriptlang.org/) – `language`
+- [Upstash Redis]() – `DB store`
+- [Vercel](https://vercel.com/) – `hosting`
+
+```javascript
+Deploy your own or use the below one
+
+`https://github-profile-watcher.vercel.app/api/watcher/[GITHUB_USERNAME]`
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the code locally
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run the code locally, open _Terminal_ in your `projects` folder and take the steps:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+# STEP 1: Get sources from GitHub
+$ git clone https://github.com/lohxt1/github-profile-watcher.git
+$ cd github-profile-watcher
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# STEP 2: Install the requirements
+$ npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# STEP 3:
+# Get a REDIS_URL string from Upstash or any other service of your choice
+# And update the .env file
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# STEP 4: Running the app in dev mode
+$ npm run dev
+```
